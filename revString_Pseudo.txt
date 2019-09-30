@@ -1,0 +1,17 @@
+DECLARE Inputstring : STRING	
+DECLARE Outstring   : STRING	
+DECLARE a : string
+DECLARE count : INTEGER
+
+Inputstring = ""
+Outstring = ""
+a = ""
+count = 0
+ 
+OUTPUT "Enter Text:"
+INPUT inputstring
+FOR count = 1 to LENGTH(inputstring) STEP -1
+    a = MID(inputstring, count1, 1)
+    Outstring = Outstring & a
+NEXT
+Output Outstring

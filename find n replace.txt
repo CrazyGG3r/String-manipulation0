@@ -1,0 +1,33 @@
+declare isntring : string
+declare charREM : string
+declare charContain : string
+declare charFind : string
+declare count : integer
+declare outstring : string
+
+count = 0 
+charREP = ""
+charContain = ""
+charFind = ""
+isntring = ""
+outstring = ""
+
+
+Output "Enter text to truncate : "
+input isntring 
+Output "Enter character to replace :"
+input charFind
+Output "Enter character to replace with :"
+input CharREP
+
+
+
+For count = 1 to length(isntring)
+   charcontain = mid(isntring, count, 1)
+       if asc(charContain) = asc(charFind)
+         then charContain = CharRep
+       end if
+   outstring = outstring & charContain
+next
+
+output Outstring        

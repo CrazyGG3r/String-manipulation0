@@ -119,6 +119,9 @@
             answer = UCase(Console.ReadLine)
             If answer = "N" Then
                 b = a
+            console.writeline("See you again :)")
+            console.readkey()
+            
             End If
 
 

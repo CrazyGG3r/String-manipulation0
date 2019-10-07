@@ -1,0 +1,44 @@
+declare instring : string
+declare Char2    : string
+declare Charsmol : string
+declare charbig  : string
+declare nombers  : string
+declare symbols  : string
+declare count    : Integer
+
+instring = ""
+Char2    = ""
+Charsmol = ""
+Charbig  = ""
+nombers  = ""
+symbols  = ""
+  
+Output "Enter String :"
+Input Instring
+ 
+For c = 1 to length(Instring)
+  char2 = mid(Instring, c,1)
+  
+  If asc(char2) >= Asc("A") and asc(char2) <= Asc("Z") 
+	then Charbig = Charbig & char2
+
+    ElseIf asc(char2) >= Asc("a") and asc(char2) <= Asc("z") 
+	then Charsmol = Charsmol & char2
+
+    ElseIf asc(char2) >= Asc("0") and asc(char2) <= Asc("9") 
+	then nombers = nombers & char2
+
+    Else symbols = symbols & char2
+   
+  end if 
+
+Next
+
+ Output charbig
+ Output charsmol
+ Output symbols
+ Output nombers
+
+
+
+

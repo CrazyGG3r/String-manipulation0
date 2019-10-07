@@ -1,0 +1,46 @@
+declare Instring1 : string
+declare Instring2 : string
+declare charA : string
+declare outstring : string
+declare total1 : integer
+declare total2 : integer
+
+total1 = 0 
+total2 = 0 
+count = 0
+count2 = 0
+Instring1 = ""
+Instring2 = ""
+charA  = ""
+outstring = ""
+
+Output "Enter Text:"
+Input Instring1
+output "Enter Text2 :"
+Input Instring2
+ 
+if len(instring1) = len(instring2)
+  then 
+     for count = 1 to len(Instring1)
+        CharA= mid(instring1 ,count1)
+        total1 = total1 + Asc(charA)
+     next
+     for count2  = 1 to len(Instring2)
+        charA = mid(instring2, count2,1)
+        total2 = total2 + asc(charA)
+     next
+     
+     If total1 = total2 
+        then 
+           Output "This is an anagram"
+        else 
+           Output "This is not an anagram."
+     end if
+  else output "This is not an anagram"
+end if
+      
+
+
+
+
+  
